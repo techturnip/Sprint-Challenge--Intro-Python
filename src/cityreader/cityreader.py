@@ -44,7 +44,7 @@ def cityreader(cities=[]):
             lon = row[4]
             
             # create and append instances of the City obj to cities arr
-            cities.append(City(name, lat, lon))
+            cities.append(City(name, float(lat), float(lon)))
 
     return cities
 
